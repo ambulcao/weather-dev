@@ -2493,6 +2493,14 @@
   resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-1.3.18.tgz#d8364b40276f3efb9c229c39da3b8b465f18f0a2"
   integrity sha512-/0hwnJkrr415yP0Hf4PjUKgGyfshrvNUKFXN85Mrt1gY49hy9IwxZgrrxlh0THXkPeq8q4VWw44eHDfAcQf20Q==
 
+"@react-navigation/native-stack@^6.9.13":
+  version "6.9.13"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-6.9.13.tgz#f308c398ee18fcd45de8ec7c04fe0641735feb31"
+  integrity sha512-ejlepMrvFneewL+XlXHHhn+6y3lwvavM4/R7XwBV0XJxCymujexK+7Vkg7UcvJ1lx4CRhOcyBSNfGmdNIHREyQ==
+  dependencies:
+    "@react-navigation/elements" "^1.3.18"
+    warn-once "^0.1.0"
+
 "@react-navigation/native@^6.1.7":
   version "6.1.7"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-6.1.7.tgz#968ef85b76d35f63111890668836fe2f125bbf90"
@@ -3095,19 +3103,10 @@
     "@react-native/virtualized-lists" "^0.72.4"
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@~18.2.14":
   version "18.2.21"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.21.tgz#774c37fd01b522d0b91aed04811b58e4e0514ed9"
   integrity sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@~18.0.14":
-  version "18.0.38"
-  resolved "https://registry.npmjs.org/@types/react/-/react-18.0.38.tgz"
-  integrity sha512-ExsidLLSzYj4cvaQjGnQCk4HFfVT9+EZ9XZsQ8Hsrcn8QNgXtpZ3m9vSIC2MWtx7jHictK6wYhQgGh6ic58oOw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -6939,33 +6938,33 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-reanimated@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.4.2.tgz#744154fead6d8d31d5bd9ac617d8c84d74a6f697"
-  integrity sha512-FbtG+f1PB005vDTJSv4zAnTK7nNXi+FjFgbAM5gOzIZDajfph2BFMSUstzIsN8T77+OKuugUBmcTqLnQ24EBVg==
+react-native-reanimated@~3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.3.0.tgz#80f9d58e28fddf62fe4c1bc792337b8ab57936ab"
+  integrity sha512-LzfpPZ1qXBGy5BcUHqw3pBC0qSd22qXS3t8hWSbozXNrBkzMhhOrcILE/nEg/PHpNNp1xvGOW8NwpAMF006roQ==
   dependencies:
     "@babel/plugin-transform-object-assign" "^7.16.7"
     "@babel/preset-typescript" "^7.16.7"
     convert-source-map "^2.0.0"
     invariant "^2.2.4"
 
-react-native-safe-area-context@^4.7.1:
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.7.1.tgz#b7be2d68dee909717cfa439bb5c7966042d231e8"
-  integrity sha512-X2pJG2ttmAbiGlItWedvDkZg1T1ikmEDiz+7HsiIwAIm2UbFqlhqn+B1JF53mSxPzdNaDcCQVHRNPvj8oFu6Yg==
+react-native-safe-area-context@4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.6.3.tgz#f06cfea05b1c4b018aa9758667a109f619c62b55"
+  integrity sha512-3CeZM9HFXkuqiU9HqhOQp1yxhXw6q99axPWrT+VJkITd67gnPSU03+U27Xk2/cr9XrLUnakM07kj7H0hdPnFiQ==
 
-react-native-screens@^3.24.0:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.24.0.tgz#3d40199f9e2594c8d6e9f065772ebb842ecf53f4"
-  integrity sha512-ncAxY6Fja1eDwxMWsWG1S2lDWbE45f8XtdpKkY+Ovwg52iEov7uWx302PsvBkPpK9dGV4u6f2ZRoZGZYBvSbbA==
+react-native-screens@~3.22.0:
+  version "3.22.1"
+  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.22.1.tgz#b0eb0696dbf1f9a852061cc71c0f8cdb95ed8e53"
+  integrity sha512-ffzwUdVKf+iLqhWSzN5DXBm0s2w5sN0P+TaHHPAx42LT7+DT0g8PkHT1QDvxpR5vCEPSS1i3EswyVK4HCuhTYg==
   dependencies:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
-react-native-svg@^13.13.0:
-  version "13.13.0"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-13.13.0.tgz#23dedb4594dcc44128d63fa5b13c49534187fef5"
-  integrity sha512-L8y8uEiMG0Tr++Nb2+24wlMuv18+bmq/CMoFFtTUlEqVvGCoK2ea8WamPl/9bV8gjL+Rngg5NqEBvKS23sbYoA==
+react-native-svg@13.9.0:
+  version "13.9.0"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-13.9.0.tgz#8df8a690dd00362601f074dec5d3a86dd0f99c7f"
+  integrity sha512-Ey18POH0dA0ob/QiwCBVrxIiwflhYuw0P0hBlOHeY4J5cdbs8ngdKHeWC/Kt9+ryP6fNoEQ1PUgPYw2Bs/rp5Q==
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
